@@ -14,7 +14,7 @@ const cryptoFluctuations = () => {
           priceChange = coin.quote.USD.percent_change_1h.toFixed(2)
           coinName = coin.name
           coinSymbol = coin.symbol
-          if (Math.abs(priceChange) > 2) {
+          if (Math.abs(priceChange) > 0) {
             if (priceChange < 0) {
               message = "🚨" + coinName + " (" + coinSymbol + ") " + "is down 📉 " + priceChange + "% in the past hour."
               tweet(message)
