@@ -17,10 +17,10 @@ const cryptoFluctuations = () => {
           coinPrice = coin.quote.USD.price
           if (Math.abs(priceChange) > 0) {
             if (priceChange < 0) {
-              message = "🚨" + coinName + " (" + coinSymbol + ") " + "is down 📉 " + priceChange + "% in the past hour. " + coinSymbol + "'s price is now: $" + coinPrice + '.'
+              message = "🚨" + coinName + " (" + coinSymbol + ") " + "is down 📉 " + priceChange + "% in the past hour. ❄️" + coinSymbol + "'s price is now: $" + coinPrice.toFixed(4) + '.'
               tweet(message)
             } else {
-              message = "🚨" + coinName + " (" + coinSymbol + ") " + "is up 📈 " + priceChange + "% in the past hour. " + coinSymbol + "'s price is now: $" + coinPrice + '.'
+              message = "🚨" + coinName + " (" + coinSymbol + ") " + "is up 📈 " + priceChange + "% in the past hour. 🔥" + coinSymbol + "'s price is now: $" + coinPrice.toFixed(4) + '.'
               tweet(message)
             }
           }
