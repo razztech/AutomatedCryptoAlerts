@@ -1,6 +1,6 @@
 # Automated Crypto Alerts
 Official Twitter for the project @AutomatedAlerts: https://twitter.com/AutomatedAlerts </br>
-A Node.js bot that tweets in real time about price fluctuations for the top cryptocurrencies: `BTC`, `ETH`, `BNB`, `XRP`, `ADA`, `SOL`, `DODGE`. </br>
+Node.js bot that tweets about price fluctuations for the top cryptocurrencies in real time: `BTC`, `ETH`, `BNB`, `XRP`, `ADA`, `SOL`, `DODGE`. </br>
 Implemented using the CoinMarketCap API (https://coinmarketcap.com/api/) and the Twitter API (https://developer.twitter.com/en/docs/twitter-api). </br>
 The app is deployed to Heroku. To run the app locally, follow these steps: </br>
 - Create a developer account for CoinmarketCap API and Twitter API (see links above)
