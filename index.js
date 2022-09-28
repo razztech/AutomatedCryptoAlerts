@@ -5,7 +5,7 @@ const client = require("./twitterClient.js")
 // require('dotenv/config')
 
 const cryptoFluctuations = () => {
-  // cron.schedule('*/30 * * * *', function() {
+  cron.schedule('*/30 * * * *', function() {
     getCoinsInformation()
       .then((response) => {
         coins = response.data.data
@@ -15,7 +15,7 @@ const cryptoFluctuations = () => {
           coinName = coin.name
           coinSymbol = coin.symbol
           coinPrice = coin.quote.USD.price
-          if (Math.abs(priceChange) > 0) {
+          if (Math.abs(priceChange) > 2) {
             if (priceChange < 0) {
               message = "🚨" + coinName + " (" + coinSymbol + ") " + "is down 📉 " + priceChange + "% in the past hour. ❄️" + coinSymbol + "'s price is now: $" + coinPrice.toFixed(4) + '.'
               tweet(message)
@@ -26,7 +26,7 @@ const cryptoFluctuations = () => {
           }
         }
       })
-  // }); 
+  }); 
 }
 
 const tweet = async (message) => {
