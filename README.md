@@ -12,4 +12,5 @@ The app is deployed to Heroku. To run the app locally, follow these steps: </br>
   - X_CMC_PRO_API_KEY
 - Remove comments for `require('dotenv/config')`
 - Run `node index.js` in Terminal </br>
+<b>Tweet:</b> </br>
 ![alt text](https://github.com/razztech/AutomatedCryptoAlerts/blob/main/tweet.png)
