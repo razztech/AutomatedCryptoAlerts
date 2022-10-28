@@ -2,7 +2,7 @@ const axios = require('axios');
 const cron = require('node-cron')
 const { TwitterApi } = require('twitter-api-v2')
 const client = require("./twitterClient.js")
-require('dotenv/config')
+// require('dotenv/config')
 
 const cryptoFluctuations = () => {
   cron.schedule('*/30 * * * *', function() {
